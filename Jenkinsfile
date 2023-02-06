@@ -71,7 +71,7 @@ pipeline{
                     }
                 }
             }
-        stage('Upload war file to nexus')
+        stage('Upload war file to nexus'){
 
             steps{
                 script{
@@ -92,7 +92,7 @@ pipeline{
                     version: '1.0.0'
                 }
             }
-    
+        }   
     }            
         
 }
