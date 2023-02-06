@@ -112,8 +112,8 @@ pipeline{
                 script{
                     withCredentials([string(credentialsId: 'git_creds', variable: 'docker_hub_cred')]) {
                         sh 'docker login -u aaisali -p ${docker_hub_cred}'
-                        sh 'docker image aaisali/$JOB_NAME:v1.$BUILD_ID'
-                        sh 'docker image aaisali/$JOB_NAME:latest'
+                        sh 'docker image push aaisali/$JOB_NAME:v1.$BUILD_ID'
+                        sh 'docker image push aaisali/$JOB_NAME:latest'
                 }
                 }
 
