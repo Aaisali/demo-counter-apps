@@ -80,10 +80,10 @@ pipeline{
 
                     nexusArtifactUploader artifacts: 
                     [
-                        [artifactId: 'springboot', 
-                        classifier: '', 
-                        file: 'target/Uber.jar', 
-                        type: 'jar'
+                        [
+                          artifactId: 'springboot', 
+                          classifier: '', file: 'target/Uber.jar', 
+                          type: 'jar'
                         ]
                     ], 
                     credentialsId: 'nexus-auth', 
