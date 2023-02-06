@@ -91,7 +91,7 @@ pipeline{
                     nexusUrl: '54.89.250.225:8081', 
                     nexusVersion: 'nexus3', 
                     protocol: 'http', 
-                    repository: 'nexusRepo', 
+                    repository: nexusRepo, 
                     version: "${readpomVersion.version}"
                 }
             }
